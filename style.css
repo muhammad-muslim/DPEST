@@ -1,0 +1,210 @@
+body,
+html {
+  overflow-x: hidden;
+}
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+
+    /* width */
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .position {
+      position: fixed;
+      z-index: 10;
+      border-top-left-radius: 35px;
+      border-top-right-radius: 35px;
+      background-color: #f5f7f9;
+      bottom: 0;
+      width: 100%;
+    }
+    .scroller {
+      overflow-y: scroll;
+      height: 200px;
+    }
+    * {
+      list-style: none;
+    }
+
+    .tab-content {
+      display: none;
+      background-color: #f5f7f9;
+    }
+
+    .tab-content.active {
+      display: block;
+      transition: all 0.5s ease-in-out;
+    }
+.form-control {
+  border: none;
+  outline: none;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  background-color: #eef0f2;
+  border: none;
+}
+
+.dropdown-item:hover {
+  background-color: #eef0f2 !important;
+}
+
+.dropdown:hover {
+  background-color: #eef0f2;
+}
+.padd {
+  padding: 5px;
+}
+
+.bgoflist {
+  background-color: hsl(0, 100%, 50%, 0.1);
+}
+
+.btn-link {
+  text-decoration: none !important;
+}
+
+.nav-p {
+  font-size: 13.5px;
+  font-weight: 500;
+}
+
+.third-bg {
+  background-color: #f5f7f9;
+}
+.posi {
+  width: 180px;
+  position: absolute;
+  left: -180px;
+  top: 0px;
+}
+
+.material {
+  display: none; /* Initially hide the icon */
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  left: -60px; /* Initial position off-screen to the left */
+  background-color: black; /* Background color */
+  color: white; /* Icon color */
+  padding: 4px;
+  width: 65px;
+  border-radius: 15px;
+}
+
+.cards {
+  position: relative; /* Required to position the icon absolutely inside the card */
+  overflow: hidden; /* Hide overflow to ensure icon doesn't appear outside */
+  /* height: 400px; */
+}
+
+@keyframes slideIn {
+  from {
+    left: -60px; /* Starting position off-screen to the left */
+  }
+  to {
+    left: -10px; /* End position at 10px from the left */
+  }
+}
+
+.cards:hover .material {
+  display: flex;
+  justify-content: end; /* Show the icon on hover */
+  animation: slideIn 0.5s ease-in-out forwards; /* Apply the animation */
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px; /* Adjust the size as needed */
+  height: 100px; /* Adjust the size as needed */
+  background-color: #f0f0f0; /* Background color of the circle */
+}
+.circle svg {
+  width: 50px; /* Size of the SVG */
+  height: 50px; /* Size of the SVG */
+}
+
+.border-right {
+  border-right: 4px solid;
+  padding: 8px;
+}
+.card {
+  border: none;
+  border-radius: 13px;
+}
+
+.hide {
+  display: none;
+  background-color: #eef0f2;
+}
+
+/* parallex effect work */
+.containers {
+  color: var(--color);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/parallex1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* .blank,
+        .other {
+          width: 100%;
+          min-height: 60vh;
+          background-color: var(--color);
+        } */
+
+.second {
+  background-image: url(images/parallex1.jpg);
+  background-attachment: fixed;
+  height: 1400px;
+}
+
+@media (max-width: 725px) {
+  .second {
+    background-image: url(images/parallex1.jpg);
+    background-attachment: fixed;
+    height: 1800px;
+  }
+}
+
+.second {
+  flex-direction: row;
+  gap: 1.6em;
+}
