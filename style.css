@@ -1,3 +1,6 @@
+
+
+
 body,
 html {
   overflow-x: hidden;
@@ -9,57 +12,99 @@ body {
   overflow-x: hidden;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
 
-    /* width */
-    ::-webkit-scrollbar {
-      width: 5px;
-    }
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
 
-    /* Track */
-    ::-webkit-scrollbar-track {
-      background: #f1f1f1;
-    }
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
 
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-      background: #888;
-    }
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.sticky-navbar {
+  margin-bottom: -200px;
+  height: fit-content;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  /* padding: -25px; */
+  /* padding-top: 10px; */
+  z-index: 50;
+  background-color: white;
+  box-shadow: 2px 4px 8px grey;
+}
 
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-      background: #555;
-    }
+.hidden {
+  display: none;
+}
 
-    .hidden {
-      display: none;
-    }
+.position {
+  position: fixed;
+  z-index: 10;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #fafafa;
+  bottom: 0;
+  width: 100%;
+}
+.scroller {
+  overflow-y: scroll;
+  height: 200px;
+}
+* {
+  list-style: none;
+}
 
-    .position {
-      position: fixed;
-      z-index: 10;
-      border-top-left-radius: 35px;
-      border-top-right-radius: 35px;
-      background-color: #f5f7f9;
-      bottom: 0;
-      width: 100%;
-    }
-    .scroller {
-      overflow-y: scroll;
-      height: 200px;
-    }
-    * {
-      list-style: none;
-    }
+.tab-content {
+  display: none;
+  background-color: #fafafa;
+}
 
-    .tab-content {
-      display: none;
-      background-color: #f5f7f9;
-    }
+.tab-content.active {
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
 
-    .tab-content.active {
-      display: block;
-      transition: all 0.5s ease-in-out;
-    }
+.logoimg {
+  width: 200px;
+}
+@media (max-width: 725px) {
+  .logoimg {
+    width: 170px;
+  }
+  .marginButton{
+    margin-bottom: 90px;
+  }
+}
+.fixedBottomP {
+  font-size: 13px;
+}
+.paragraph {
+  font-size: 16px;
+  font-weight: 600;
+}
+.paragraphAmount {
+  font-size: 14px;
+  font-weight: 600;
+}
+.eleventhCardH {
+  height: 365px;
+}
+.ninthCardH{
+  height: 410px;
+  margin-bottom: 10px;
+}
+
 .form-control {
   border: none;
   outline: none;
